@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    alas : <input type="text" id="ass"> <br> <br>
+    tinggi : <input type="text" id="tg"> <br> <br>
+    sisi : <input type="text" id="ss"> <br> <br>
+    <button onclick="segitiga()">Hitung</button> <br> <br>
+    luas : <input type="text" id="ls"> <br> <br>
+    keliling : <input type="text" id="kl">
+    <script>
+        function segitiga(){
+            var alas,tinggi,luas,keliling,sisi ;
+             alas = parseInt(document.getElementById("ass").value);
+             tinggi = parseInt(document.getElementById("tg").value);
+             sisi = parseInt(document.getElementById("ss").value);
+            luas = 1/2 * alas * tinggi
+            keliling = sisi + sisi + sisi
+            document.getElementById("kl").value = keliling
+            document.getElementById("ls").value = luas
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    jari jari : <input type="text" id="jari"> <br> <br>
+    <button onclick="lingkaran()">hitung</button> <br> <br>
+    luas : <input type="text" id="ls"> <br> <br>
+    keliling : <input type="text" id="kl">
+    <script>
+        function lingkaran(){
+            var phi,r,luas,keliling;
+            phi = 22/7
+            r = parseInt(document.getElementById("jari").value);
+            luas = phi * r * r
+            keliling = 2 * phi * r
+            document.getElementById("ls").value = luas
+            document.getElementById("kl").value = keliling
+        }
+    </script>
+</body>
+</html>

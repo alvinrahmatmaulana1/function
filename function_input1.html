@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>persegi</h4>
+    sisi : <input type="text" id="ss"> <br> <br>
+    <button onclick="persegi()">Hitung</button> <br> <br>
+    luas : <input type="text" id="lss"> <br> <br>
+    keliling : <input type="text" id="kll">
+    <script>
+        function persegi(){
+            var sisi,luas,keliling ;
+         sisi = parseInt( document.getElementById("ss").value);
+            luas = sisi * sisi
+            keliling = sisi * 4
+            document.getElementById("lss").value = luas ;
+            document.getElementById("kll").value = keliling ;
+        }
+    </script>
+</body>
+</html>

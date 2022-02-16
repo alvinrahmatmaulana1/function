@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    panjang : <input type="text" id="ss"> <br> <br>
+    lebar : <input type="text" id="lb"> <br> <br>
+    <button onclick="persegipanjang()">Hitung</button> <br> <br>
+    luas : <input type="text" id="hasil1"> <br> <br>
+    keliling : <input type="text" id="kll">
+    <script>
+        function persegipanjang(){
+            var panjang,lebar,luas,keliling ;
+         panjang = parseInt( document.getElementById("ss").value);
+         lebar = parseInt(document.getElementById("lb").value);
+            luas = panjang * lebar
+            keliling = 2 * (panjang + lebar)
+            document.getElementById("hasil1").value = luas ;
+            document.getElementById("kll").value = keliling ;
+        }
+    </script>
+</body>
+</html>
